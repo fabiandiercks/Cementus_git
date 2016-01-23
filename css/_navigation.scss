@@ -1,0 +1,286 @@
+/*---------------------------------------------------
+ Navigation 
+---------------------------------------------------*/
+
+#menu {
+  position: fixed;
+  top: 50%;
+  left: 960 / 1280 *100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#menu li {
+  position: relative;
+}
+#menu li:before {
+  background-color: $gold;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all ease-out 0.1s 0.2s;
+  -moz-transition: all ease-out 0.1s 0.2s;
+  -o-transition: all ease-out 0.1s 0.2s;
+  transition: all ease-out 0.1s 0.2s;
+}
+#menu li:hover:before {
+  width: 2vw;
+  -webkit-transition: all ease-out 0.1s 0;
+  -moz-transition: all ease-out 0.1s 0;
+  -o-transition: all ease-out 0.1s 0;
+  transition: all ease-out 0.1s 0;
+}
+#menu li a {
+  padding: 7px 0 7px 0;
+  margin-left: 5vw;
+  display: block;
+  font-size: $font-size-nav;
+  line-height: 24px;
+  color: $gold;
+  text-decoration: none;
+  font-family: $base-font-family;
+  font-weight: $light;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  width: 30px;
+}
+#menu li a:after {
+  content: "";
+  background-color: $gold;
+  height: 1px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter {
+  opacity: 0;
+  margin: 0 2px;
+}
+#menu li a .letter:first-child {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  margin: 0 2px 0 4px;
+}
+#menu li a .letter:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(3) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(4) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(5) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(6) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(7) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(8) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(9) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+#menu li a .letter:nth-child(10) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+#menu li a .letter:nth-child(11) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+#menu li a .letter:nth-child(12) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+#menu li a .letter:nth-child(13) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(14) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(15) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(16) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(17) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(18) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a .letter:nth-child(19) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+#menu li a:hover {
+  width: auto;
+}
+#menu li a:hover:after {
+  width: 100%;
+  left: 100%;
+}
+#menu li a:hover .letter:first-child {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(2) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(3) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(4) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(5) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(6) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(7) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(8) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(9) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(10) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(11) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(12) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(13) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(14) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(15) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(16) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(17) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(18) {
+  opacity: 1;
+}
+#menu li a:hover .letter:nth-child(19) {
+  opacity: 1;
+}
+
+/*---------------------------------------------------
+  Ende Navigation 
+---------------------------------------------------*/
