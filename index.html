@@ -132,31 +132,29 @@
 <section id="pflastersteine">
 	<div class="container">
 		<div class="row">
-			<div class="custom-navigation col-1">
-			  <div class="custom-controls-container"></div>
-			</div>
+			<!-- Flexslider -->
+			<div class="controls col-1"></div>
 			<div class="flexslider col-11">
 			  <ul class="slides">
 			    <li>
-			    	<div class="slider-image">
-			    		<img src="images/pflastersteine_zickzack.jpg"/>
-			    	</div>
-			      <div class="slider-description">
-			      	<h4>ZickZack</h4>
-			      	<p>ölaskölakscölaskc</p>
-			      </div>
+			      <img src="images/pflastersteine_zickzack.jpg"/>
 			    </li>
 			    <li>
-			      <img src="images/pflastersteine_zickzack.jpg" />
+			      <img src="slide2.jpg"/>
 			    </li>
 			    <li>
-			      <img src="slide3.jpg" />
+			      <img src="slide3.jpg"/>
 			    </li>
 			    <li>
-			      <img src="slide4.jpg" />
+			      <img src="slide4.jpg"/>
 			    </li>
 			  </ul>
+			  <div>
+				<h4>ZickZack</h4>
+				<p>sadasdasdasdasddsdasdasdasdasdasds</p>
 			</div>
+			</div>
+			<!-- Ende Flexslider -->
 		</div>
 	</div>
 </section>
@@ -179,12 +177,12 @@ var parallax = new Parallax(scene);</script>
 <script type="text/javascript">
 // Can also be used with $(document).ready()
 $(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    controlsContainer: $(".custom-controls-container"),
-    customDirectionNav: $(".custom-navigation a"),
-		slideshow: false
-  });
+  $('.flexslider').flexslider({
+    animation: "slide",
+    slideshow: false,
+    directionNav: false,
+    controlsContainer: $(".controls")
+  });
 });
 </script>
 <!-- Skript Flexslider2 Ende -->

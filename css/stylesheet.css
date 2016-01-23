@@ -513,17 +513,9 @@ p {
 .article {
   margin-top: 120px; }
 
-.slider-description {
+.description {
   float: left;
-  padding: 8% 8%;
-  border-left: 12px solid #beb078; }
-
-.slider-description p {
-  float: left;
-  padding-top: 20%; }
-
-.slider-image {
-  float: left; }
+  display: inline-block; }
 
 /*---------------------------------------------------
   Parallax Cubes
