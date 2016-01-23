@@ -1,0 +1,568 @@
+/*---------------------------------------------------
+ Variables 
+---------------------------------------------------*/
+/* Color */
+/* Font-Families */
+/* Font-Weights */
+/* Font-Sizes */
+/*---------------------------------------------------
+ Grid 
+---------------------------------------------------*/
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.row {
+  overflow: hidden; }
+
+.col-1 {
+  width: 8.33333%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-2 {
+  width: 16.66667%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-3 {
+  width: 25%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-4 {
+  width: 33.33333%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-5 {
+  width: 41.66667%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-6 {
+  width: 50%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-7 {
+  width: 58.33333%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-8 {
+  width: 66.66667%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-9 {
+  width: 75%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-10 {
+  width: 83.33333%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-11 {
+  width: 91.66667%;
+  float: left;
+  box-sizing: border-box; }
+
+.col-12 {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/*---------------------------------------------------
+ Offeset 
+---------------------------------------------------*/
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+/*---------------------------------------------------
+ Ende Grid 
+---------------------------------------------------*/
+/*---------------------------------------------------
+ Navigation 
+---------------------------------------------------*/
+#menu {
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100; }
+
+#menu li {
+  position: relative; }
+
+#menu li:before {
+  background-color: #beb078;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all ease-out 0.1s 0.2s;
+  -moz-transition: all ease-out 0.1s 0.2s;
+  -o-transition: all ease-out 0.1s 0.2s;
+  transition: all ease-out 0.1s 0.2s; }
+
+#menu li:hover:before {
+  width: 2vw;
+  -webkit-transition: all ease-out 0.1s 0;
+  -moz-transition: all ease-out 0.1s 0;
+  -o-transition: all ease-out 0.1s 0;
+  transition: all ease-out 0.1s 0; }
+
+#menu li a {
+  padding: 7px 0 7px 0;
+  margin-left: 5vw;
+  display: block;
+  font-size: 87.5%;
+  line-height: 24px;
+  color: #beb078;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  width: 30px; }
+
+#menu li a:after {
+  content: "";
+  background-color: #beb078;
+  height: 1px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter {
+  opacity: 0;
+  margin: 0 2px; }
+
+#menu li a .letter:first-child {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  margin: 0 2px 0 4px; }
+
+#menu li a .letter:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(3) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(4) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(5) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(6) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(7) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(8) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(9) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(10) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(11) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(12) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(13) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(14) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(15) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(16) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(17) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(18) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a .letter:nth-child(19) {
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+
+#menu li a:hover {
+  width: auto; }
+
+#menu li a:hover:after {
+  width: 100%;
+  left: 100%; }
+
+#menu li a:hover .letter:first-child {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(2) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(3) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(4) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(5) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(6) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(7) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(8) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(9) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(10) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(11) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(12) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(13) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(14) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(15) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(16) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(17) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(18) {
+  opacity: 1; }
+
+#menu li a:hover .letter:nth-child(19) {
+  opacity: 1; }
+
+/*---------------------------------------------------
+  Ende Navigation 
+---------------------------------------------------*/
+/*---------------------------------------------------
+ General Style 
+---------------------------------------------------*/
+ol, ul {
+  list-style: none;
+  margin: 0; }
+
+body {
+  font-size: 100%; }
+
+@media all and (max-width: 600px) {
+  body {
+    font-size: 80%; } }
+@media all and (max-width: 480px) {
+  body {
+    font-size: 60%; } }
+img {
+  max-width: 100%; }
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 450%;
+  color: #fff;
+  line-height: 1.2; }
+
+h4 {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 187.5%;
+  color: #333;
+  line-height: 1.2; }
+
+h5 {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 112.5%;
+  color: #fff;
+  line-height: 1.2; }
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 100%;
+  color: #333;
+  line-height: 1.4; }
+
+#home {
+  margin: 0px;
+  width: 100%;
+  height: 800px;
+  background-color: #333; }
+
+.logo {
+  max-width: none; }
+
+.claim {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+  font-size: 375%;
+  color: #fff;
+  opacity: 0.15;
+  line-height: 1.2; }
+
+.introduction {
+  margin-top: 18.75%; }
+
+#ueberUns h2 {
+  margin-top: 115%;
+  color: #333; }
+
+#ueberUns .col-6 img {
+  margin-top: 15%; }
+
+#ueberUns .col-4 img {
+  margin-top: 320px; }
+
+#ueberUns p {
+  border: 12px solid #beb078;
+  padding: 50px 30px 50px 30px;
+  margin-top: 120px; }
+
+#news {
+  margin: 0px;
+  width: 100%;
+  height: 800px;
+  background-color: #333; }
+
+#news h5:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 19.53125%;
+  margin-left: 10%; }
+
+#news p {
+  color: #fff; }
+
+#news a {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 600;
+  font-size: 112.5%;
+  color: #beb078;
+  line-height: 1.2;
+  padding-left: 20%; }
+
+.abstract {
+  margin-left: -4%; }
+
+.article {
+  margin-top: 120px; }
+
+.slider-description {
+  float: left;
+  padding: 8% 8%;
+  border-left: 12px solid #beb078; }
+
+.slider-description p {
+  float: left;
+  padding-top: 20%; }
+
+.slider-image {
+  float: left; }
+
+/*---------------------------------------------------
+  Parallax Cubes
+---------------------------------------------------*/
+.layer {
+  position: relative; }
+
+.layer img {
+  position: relative; }
+
+.layer:nth-child(1) img {
+  top: 0px;
+  right: 0px;
+  float: right; }
+
+.layer:nth-child(2) img {
+  top: 80px;
+  right: 320px; }
+
+.layer:nth-child(3) img {
+  top: 155px;
+  right: 115px;
+  z-index: -1; }
+
+.layer:nth-child(4) img {
+  top: 265px;
+  right: 0px;
+  float: right; }
+
+.cubes {
+  float: right;
+  max-width: 100%;
+  height: 800px; }
+
+@media all and (max-width: 910px) {
+  .cubes {
+    display: none; } }
+/*---------------------------------------------------
+  Ende Parallax Cubes
+---------------------------------------------------*/
+
+/*# sourceMappingURL=stylesheet.css.map */
