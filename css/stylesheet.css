@@ -529,6 +529,26 @@ p {
   margin-top: 2%;
   margin-bottom: 5%; }
 
+.slides img {
+  display: inline;
+  float: left;
+  max-width: 58.333%; }
+
+.flex-caption button {
+  border: 5px solid #333;
+  margin-top: 50%;
+  background-color: #fff;
+  color: #333;
+  font-size: 150%;
+  font-weight: 600;
+  width: 100%;
+  padding: 2%; }
+
+.flex-caption button:hover {
+  border-color: #beb078;
+  color: #beb078;
+  cursor: pointer; }
+
 /*---------------------------------------------------
   Parallax Cubes
 ---------------------------------------------------*/
