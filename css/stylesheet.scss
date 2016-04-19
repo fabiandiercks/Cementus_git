@@ -188,8 +188,21 @@ p{
 	cursor: pointer;
 }
 
+#transportbeton{
+	margin: 0px;
+	width: 100%;
+	height: 800px;
+	background-color: $grey;
+}
 
+#transportbeton p{
+	color: #fff;
+	margin-top: 40%;
+}
 
+#transportbeton h2{
+	margin-top: 10%;
+}
 /*---------------------------------------------------
   Parallax Cubes
 ---------------------------------------------------*/
